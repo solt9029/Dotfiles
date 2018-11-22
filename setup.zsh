@@ -8,7 +8,7 @@ fi
 for f in .??* ; do
   # ignore files
   [[ "${f}" == ".git" ]] && continue
-  
+
   # link all files
   ln -s "${HOME}/.dotfiles/${f}" "${HOME}/${f}"
 done
