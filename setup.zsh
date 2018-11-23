@@ -2,13 +2,16 @@
 
 # prezto
 if [ ! -d "${HOME}/.zprezto" ] ; then
-  git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+  git clone --recursive https://github.com/sorin-ionescu/prezto.git "${HOME}/.zprezto"
 fi
 
-for f in .??* ; do
-  # ignore files
-  [[ "${f}" == ".git" ]] && continue
+# vundle
+if [ ! -d "${HOME}/.vim/bundle/Vundle.vim" ] ; then
+  git clone https://github.com/gmarik/Vundle.vim.git "${HOME}/.vim/bundle/Vundle.vim"
+fi
 
-  # link all files
+# symbolic link
+for f in .??* ; do
+  [[ "${f}" == ".git" ]] && continue # ignore files
   ln -s "${HOME}/.dotfiles/${f}" "${HOME}/${f}"
 done
