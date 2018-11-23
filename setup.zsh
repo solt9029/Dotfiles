@@ -10,6 +10,12 @@ if [ ! -d "${HOME}/.vim/bundle/Vundle.vim" ] ; then
   git clone https://github.com/gmarik/Vundle.vim.git "${HOME}/.vim/bundle/Vundle.vim"
 fi
 
+# sdkman
+if [ ! -d "${HOME}/.sdkman" ] ; then
+  curl -s http://get.sdkman.io | zsh
+  source "${HOME}/.sdkman/bin/sdkman-init.sh"
+fi
+
 # symbolic link
 for f in .??* ; do
   [[ "${f}" == ".git" ]] && continue # ignore files
