@@ -8,6 +8,7 @@ brew "direnv"
 brew "docker", link: false
 brew "openssl"
 brew "readline"
+brew "gibo"
 brew "jenv"
 brew "mas"
 brew "nodebrew"
