@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "sanemat/font"
+brew "composer"
 brew "direnv"
 brew "docker", link: false
 brew "openssl"
