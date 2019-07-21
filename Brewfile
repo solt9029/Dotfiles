@@ -12,6 +12,7 @@ brew "openssl"
 brew "readline"
 brew "gibo"
 brew "jenv"
+brew "jq"
 brew "mas"
 brew "nodebrew"
 brew "pyenv"
@@ -20,6 +21,7 @@ brew "xz"
 brew "ssh-copy-id"
 brew "tig"
 brew "watchman"
+brew "wget"
 brew "zlib"
 brew "zsh"
 brew "zsh-completions"
@@ -30,15 +32,20 @@ cask "android-file-transfer"
 cask "android-studio"
 cask "arduino"
 cask "docker"
+cask "intellij-idea-ce"
 cask "iterm2"
 cask "java"
 cask "java8"
+cask "minikube"
 cask "processing"
 cask "skype"
 cask "slack"
 cask "soundflower"
+cask "virtualbox"
+mas "Boxy SVG", id: 611658502
 mas "Free MP4 Converter", id: 693443591
 mas "GarageBand", id: 682658836
+mas "Gifted", id: 771955779
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
