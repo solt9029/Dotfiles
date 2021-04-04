@@ -1,10 +1,10 @@
 [user]
-	email = atemu1212@yahoo.co.jp
-	name = Kenshi Shiode
+  email = atemu1212@yahoo.co.jp
+  name = Kenshi Shiode
 [core]
-	autocrlf = input
-	editor = vim -c \"set fenc=utf-8\"
+  autocrlf = input
+  editor = vim -c \"set fenc=utf-8\"
 [push]
-    default = current
+  default = current
 [ghq]
-    root = ~/.ghq
+  root = ~/.ghq
