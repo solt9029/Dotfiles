@@ -41,6 +41,10 @@ export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export Go111MODULE=on
+eval "$(rbenv init -)"
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1)'$PS
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
