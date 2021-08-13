@@ -5,9 +5,14 @@
 ```sh
 git clone git@github.com:solt9029/Dotfiles.git ~/.dotfiles
 cd .dotfiles
-chmod +x ./setup.sh
-./setup.zh
+chmod +x ./before.sh
+./before.zh
 brew bundle
+
+# do some setup
+
+chmod +x ./after.sh
+./after.sh
 ```
 
 ## Update

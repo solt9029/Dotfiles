@@ -1,5 +1,5 @@
 #!/bin/sh
-
+ 
 # prezto
 if [ ! -d "${HOME}/.zprezto" ] ; then
   git clone --recursive https://github.com/sorin-ionescu/prezto.git "${HOME}/.zprezto"
@@ -11,7 +11,7 @@ if [ ! -d "${HOME}/.vim/bundle/Vundle.vim" ] ; then
 fi
 
 # container-structure-test
-if [ ! -d "/usr/local/bin/container-structure-test"] ; then
+if [ ! -d "/usr/local/bin/container-structure-test" ] ; then
   curl -LO https://storage.googleapis.com/container-structure-test/latest/container-structure-test-darwin-amd64 && 
   chmod +x container-structure-test-darwin-amd64 && 
   mv container-structure-test-darwin-amd64 /usr/local/bin/container-structure-test
