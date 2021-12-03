@@ -23,6 +23,7 @@ bindkey '^R' peco-history-selection
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Customize to your needs...
+export PATH=/opt/homebrew/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH="$HOME/.jenv/bin:$PATH"
@@ -43,8 +44,8 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export Go111MODULE=on
 eval "$(rbenv init -)"
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-PS1='$(kube_ps1)'$PS
+# source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+# PS1='$(kube_ps1)'$PS
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
