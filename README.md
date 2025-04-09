@@ -10,9 +10,6 @@ chmod +x ./before.sh
 brew bundle
 
 # do some setup
-
-chmod +x ./after.sh
-./after.sh
 ```
 
 ## Update
