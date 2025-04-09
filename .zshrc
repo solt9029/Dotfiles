@@ -44,6 +44,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export Go111MODULE=on
 eval "$(rbenv init -)"
+eval "$(gh completion -s zsh)"
 # source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 # PS1='$(kube_ps1)'$PS
 
